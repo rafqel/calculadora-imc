@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -19,53 +19,134 @@
 
   <body>
     <main class="container">
-      <section id="img">
-        <img src="./assets/images/illustration.svg" />
-      </section>
+      <div class="top-row">
+        <section id="img">
+          <img src="./assets/images/illustration.svg" alt="Ilustração" />
+        </section>
 
-      <section id="calculator">
-        <form id="form">
-          <h1 id="title">Calculadora - IMC</h1>
+        <section id="calculator">
+          <form id="form">
+            <h1 id="title">Calculadora - IMC</h1>
 
-          <div class="input-box">
-            <label for="weight">Peso em kg</label>
-            <div class="input-field">
-              <i class="fa-solid fa-weight-hanging"></i>
-              <input type="number" id="weight" required />
-              <span>Kg</span>
+            <div class="input-box">
+              <label for="weight">Peso em kg</label>
+              <div class="input-field">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <input type="number" id="weight" required />
+                <span>Kg</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label for="height">Altura em metros</label>
+              <div class="input-field">
+                <i class="fa-solid fa-ruler"></i>
+                <input type="number" id="height" step="0.01" required />
+                <span>m</span>
+              </div>
+            </div>
+
+            <button id="calculate">Calcular</button>
+          </form>
+
+          <div id="infos" class="hidden">
+            <div id="result">
+              <div id="bmi">
+                <span id="value"></span>
+                <span>Seu IMC</span>
+              </div>
+              <div id="description">
+                <span></span>
+              </div>
+            </div>
+
+            <div id="more_info">
+              <a
+                href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm"
+              >
+                Mais informações sobre o IMC
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
             </div>
           </div>
+        </section>
+      </div>
 
-          <div class="input-box">
-            <label for="height">Altura em metros</label>
-            <div class="input-field">
-              <i class="fa-solid fa-ruler"></i>
-              <input type="number" id="height" step="0.01" required />
-              <span>m</span>
-            </div>
+      <section id="education" class="hidden">
+        <h2>Dicas para uma vida mais saudável</h2>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <i class="fa-solid fa-apple-whole"></i>
+            <h3>Alimentação equilibrada</h3>
+            <p>
+              Prefira frutas, verduras, legumes e grãos integrais. Evite
+              ultraprocessados e excesso de açúcar.
+            </p>
           </div>
 
-          <button id="calculate">Calcular</button>
-        </form>
-
-        <div id="infos" class="hidden">
-          <div id="result">
-            <div id="bmi">
-              <span id="value"></span>
-              <span>Seu IMC</span>
-            </div>
-            <div id="description">
-              <span></span>
-            </div>
+          <div class="tip-card">
+            <i class="fa-solid fa-person-running"></i>
+            <h3>Atividade física</h3>
+            <p>
+              Pratique pelo menos 150 minutos de atividade moderada por semana,
+              como caminhada ou bicicleta.
+            </p>
           </div>
 
-          <div id="more_info">
-            <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm"
-              >Mais informações sobre o IMC<i
-                class="fa-solid fa-arrow-up-right-from-square"
-              ></i
-            ></a>
+          <div class="tip-card">
+            <i class="fa-solid fa-glass-water"></i>
+            <h3>Hidratação</h3>
+            <p>
+              Beba cerca de 2 litros de água por dia. A hidratação adequada
+              ajuda no metabolismo e na disposição.
+            </p>
           </div>
+
+          <div class="tip-card">
+            <i class="fa-solid fa-bed"></i>
+            <h3>Sono de qualidade</h3>
+            <p>
+              Durma de 7 a 9 horas por noite. O sono regular contribui para o
+              controle do peso e da saúde mental.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <h3>Saúde mental</h3>
+            <p>
+              Cuide do estresse, mantenha vínculos sociais e procure ajuda
+              profissional quando necessário.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <i class="fa-solid fa-stethoscope"></i>
+            <h3>Acompanhamento</h3>
+            <p>
+              Procure a Unidade Básica de Saúde (UBS) para avaliações periódicas
+              e orientações individuais.
+            </p>
+          </div>
+        </div>
+
+        <div id="personal-tip">
+          <h3>Recomendação para o seu resultado</h3>
+          <p id="personal-message">
+            Calcule seu IMC para ver uma recomendação personalizada.
+          </p>
+        </div>
+
+        <div id="sources">
+          <p>
+            Fontes:
+            <a href="https://www.gov.br/saude/pt-br" target="_blank"
+              >Ministério da Saúde</a
+            >
+            • <a href="https://www.who.int/pt/about" target="_blank">OMS</a> •
+            <a href="https://bvsalud.org/" target="_blank">BVS Saúde</a>
+          </p>
         </div>
       </section>
     </main>
